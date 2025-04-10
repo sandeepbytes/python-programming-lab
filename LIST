@@ -1,0 +1,49 @@
+def createlist(l,n):
+	for i in range(n):
+		temp=int(input())
+		l.append(temp)
+	return l
+	
+def even_sum(l):
+	evensum=0
+	for i in range(len(l)):
+		if i%2==0:
+			evensum+=l[i]
+	return evensum
+	
+def odd_sum(l):
+	oddsum=0
+	for i in range(len(l)):
+		if i%2!=0:
+			oddsum+=l[i]
+	return oddsum
+	
+	
+n1=int(input("enter size of l1 :"))
+n2=int(input("enter size of l2 :"))
+n3=int(input("enter size of l3 :"))
+l1=[]
+l2=[]
+l3=[]
+
+print("enter size of first list:")
+l1=createlist(l1,n1)
+
+print("enter size of second list:")
+l2=createlist(l2,n2)
+
+print("enter size of third list:")
+l3=createlist(l3,n3)
+
+print("even sum in first list :",even_sum(l1))
+
+print("even sum in second list :",even_sum(l2))
+
+print("even sum in third list :",even_sum(l3))
+
+print("odd sum in first list :",odd_sum(l1))
+
+print("odd sum in second list :",odd_sum(l2))
+
+print("odd sum in third list :",odd_sum(l3)) 
+		
