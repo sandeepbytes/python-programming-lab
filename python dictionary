@@ -1,0 +1,8 @@
+#creating dictionary variable
+d={}
+n=int(input("enter the number"))
+for i in range(n):
+    key=input("enter the key: ")
+    value=int(input("enter the value: "))
+    d[key]=value
+print(d)
