@@ -1,0 +1,30 @@
+r=int(input("enter the rows"))
+column=int(input("enter the column"))
+print("enter mat 1")
+mat=[]
+for i in range(r):
+    row=[]
+    for j in range(column):
+        n=int(input(f"enter the element in mat{[i]}{[j]}: "))
+        row.append(n)
+    mat.append(row)
+# print(mat)
+
+mat2=[]
+print("enter mat 2")
+for i in range(r):
+    row=[]
+    for j in range(column):
+        n=int(input(f"enter the element in mat2{[i]}{[j]}: "))
+        row.append(n)
+    mat2.append(row)
+sum_mat=[]
+print("enter addition of matrix")
+if len(mat)==len(mat2):
+    for i in range(r):
+        row=[]
+        for j in range(column):
+            sum=mat[i][j]+mat2[i][j]
+            row.append(sum)
+        sum_mat.append(row)
+print(sum_mat)
